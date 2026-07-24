@@ -1,0 +1,25 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift / SPM
+.swiftpm/
+Packages/
+Package.resolved
+
+# Backend
+LadyCrisp/Backend/node_modules/
+LadyCrisp/Backend/.env
+.env
+.env.*
+
+# macOS
+.DS_Store
+**/.DS_Store
