@@ -9,6 +9,7 @@
  * (or your deployed URL). Never put the secret key in the iOS app.
  */
 
+const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const Stripe = require("stripe");
@@ -25,6 +26,9 @@ const stripe = stripeSecret ? new Stripe(stripeSecret) : null;
 
 app.use(cors());
 app.use(express.json());
+
+// Serve the Freeze Dried Apples storefront website (static files in ./public).
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/health", (_req, res) => {
   res.json({ ok: true, brand: "Freeze Dried Apples", market: "Miami FL" });
