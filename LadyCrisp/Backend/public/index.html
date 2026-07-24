@@ -30,8 +30,12 @@
     <!-- Hero / Product -->
     <section class="hero" id="shop">
       <div class="hero-grid">
-        <div class="product-photo" aria-hidden="true">
-          <div class="photo-apple"></div>
+        <div class="product-photo">
+          <!-- Drop your own photo at public/images/product.jpg (or .png/.webp).
+               If it's missing, the styled placeholder below is shown instead. -->
+          <img class="hero-img" src="./images/product.jpg" alt="Freeze Dried Apples — organic freeze-dried Pink Lady apples pouch"
+               onerror="this.classList.add('img-missing')" />
+          <div class="photo-apple" aria-hidden="true"></div>
           <span class="photo-tag">Miami · Florida</span>
         </div>
         <div class="hero-copy">
@@ -101,6 +105,8 @@
     <section class="about" id="about">
       <div class="wrap about-grid">
         <div class="about-banner">
+          <!-- Optional: drop public/images/about.jpg for a background photo here. -->
+          <img class="about-img" src="./images/about.jpg" alt="" onerror="this.classList.add('img-missing')" />
           <h2 class="brand-title on-dark">Freeze Dried Apples</h2>
           <p class="on-dark-sub">Miami · Florida</p>
         </div>
