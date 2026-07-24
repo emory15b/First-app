@@ -1,4 +1,4 @@
-# First-app · Lady Crisp
+# First-app · Freeze Dried Apples
 
 iOS SwiftUI storefront for organic freeze-dried **Pink Lady** apples from Miami, Florida.
 

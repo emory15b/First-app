@@ -14,7 +14,7 @@ struct ReviewsView: View {
                             Text("From Miami & beyond")
                                 .font(Theme.brandFont)
                                 .foregroundStyle(Theme.ink)
-                            Text("Neighbors who keep Lady Crisp in the tote.")
+                            Text("Neighbors who keep Freeze Dried Apples in the tote.")
                                 .font(.body)
                                 .foregroundStyle(Theme.muted)
                         }

@@ -45,7 +45,7 @@ actor ShippoService {
     }
 
     private let origin: [String: String] = [
-        "name": "Lady Crisp",
+        "name": "Freeze Dried Apples",
         "street1": "1000 Brickell Ave",
         "city": "Miami",
         "state": "FL",
@@ -63,7 +63,7 @@ actor ShippoService {
             return [
                 ShippingRate(
                     id: "free_bundle",
-                    carrier: "Lady Crisp",
+                    carrier: "Freeze Dried Apples",
                     service: "Free Florida bundle shipping",
                     amountCents: 0,
                     estimatedDays: "2–4 business days",

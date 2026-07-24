@@ -343,7 +343,7 @@ struct OrderConfirmationView: View {
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(Theme.muted)
 
-            Text("Thanks for supporting Miami-made Lady Crisp. \(order.isDemo ? "Demo Stripe payment recorded — connect your backend for live charges." : "Stripe payment confirmed.")")
+            Text("Thanks for supporting Miami-made Freeze Dried Apples. \(order.isDemo ? "Demo Stripe payment recorded — connect your backend for live charges." : "Stripe payment confirmed.")")
                 .font(.body)
                 .foregroundStyle(Theme.muted)
                 .multilineTextAlignment(.center)
