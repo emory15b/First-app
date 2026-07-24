@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		329A75723CB24865B167A503 /* LadyCrispApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A329A75723CB24865B167A50 /* LadyCrispApp.swift */; };
+		22E02F7111D743208A03FBCF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E02F7111D743208A03FBC /* Theme.swift */; };
+		9B4567B105A2451D8B4B6E09 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B4567B105A2451D8B4B6E0 /* Product.swift */; };
+		14A840FC74854D2F981126F6 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A840FC74854D2F981126F /* Review.swift */; };
+		58E6AB458FB74532A610D1CB /* CartStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E6AB458FB74532A610D1C /* CartStore.swift */; };
+		18BC818FB2AF4BA08E51CB5B /* ShippoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BC818FB2AF4BA08E51CB5 /* ShippoService.swift */; };
+		03C3A4EEF4B14D148703B86E /* StripeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03C3A4EEF4B14D148703B86 /* StripeService.swift */; };
+		BEC768083D8F41388E53D4C5 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC768083D8F41388E53D4C /* OrderService.swift */; };
+		25091B26F8E34237BDAE60A1 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25091B26F8E34237BDAE60A /* RootTabView.swift */; };
+		F00BBC4D97AF4B7CB2C564D9 /* ProductPhotoPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF00BBC4D97AF4B7CB2C564D /* ProductPhotoPlaceholder.swift */; };
+		864BEF15E9214A6BA97F7C78 /* ProductHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A864BEF15E9214A6BA97F7C7 /* ProductHomeView.swift */; };
+		0E8D6F298D684EC6A7CC5CE2 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E8D6F298D684EC6A7CC5CE /* CheckoutView.swift */; };
+		8E108E9B80244039B6782AA3 /* ReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E108E9B80244039B6782AA /* ReviewsView.swift */; };
+		885938B12327418BBF1DB7CF /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A885938B12327418BBF1DB7C /* ContactView.swift */; };
+		694EFB44EFF14E64A0BFFF7A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694EFB44EFF14E64A0BFFF7 /* AboutView.swift */; };
+		789D94A16AB94B0A938117AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A789D94A16AB94B0A938117A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52FDADE7877A4C5798C1272A /* LadyCrisp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadyCrisp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A329A75723CB24865B167A50 /* LadyCrispApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LadyCrispApp.swift; sourceTree = "<group>"; };
+		A22E02F7111D743208A03FBC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A9B4567B105A2451D8B4B6E0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A14A840FC74854D2F981126F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		A58E6AB458FB74532A610D1C /* CartStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartStore.swift; sourceTree = "<group>"; };
+		A18BC818FB2AF4BA08E51CB5 /* ShippoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippoService.swift; sourceTree = "<group>"; };
+		A03C3A4EEF4B14D148703B86 /* StripeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeService.swift; sourceTree = "<group>"; };
+		ABEC768083D8F41388E53D4C /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
+		A25091B26F8E34237BDAE60A /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		AF00BBC4D97AF4B7CB2C564D /* ProductPhotoPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPhotoPlaceholder.swift; sourceTree = "<group>"; };
+		A864BEF15E9214A6BA97F7C7 /* ProductHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHomeView.swift; sourceTree = "<group>"; };
+		A0E8D6F298D684EC6A7CC5CE /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		A8E108E9B80244039B6782AA /* ReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsView.swift; sourceTree = "<group>"; };
+		A885938B12327418BBF1DB7C /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		A694EFB44EFF14E64A0BFFF7 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		ACB524A90A07450087727233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A789D94A16AB94B0A938117A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA5780D11A30431C8DACC9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E87249BD0174FD5A988EFE6 = {
+			isa = PBXGroup;
+			children = (
+				30EC1E6F366D4CF793B6AAFD /* LadyCrisp */,
+				378DF137873242CD9B0B9FB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		378DF137873242CD9B0B9FB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FDADE7877A4C5798C1272A /* LadyCrisp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30EC1E6F366D4CF793B6AAFD /* LadyCrisp */ = {
+			isa = PBXGroup;
+			children = (
+				A329A75723CB24865B167A50 /* LadyCrispApp.swift */,
+				84D4E1950AEE47378AE9014F /* Models */,
+				F383CD6D2EDE4349B556818C /* Views */,
+				A6D3DAA61332437590C092EE /* Services */,
+				AE067B355AF74AC7BE78D1BB /* Theme */,
+				A789D94A16AB94B0A938117A /* Assets.xcassets */,
+				ACB524A90A07450087727233 /* Info.plist */,
+			);
+			path = LadyCrisp;
+			sourceTree = "<group>";
+		};
+		84D4E1950AEE47378AE9014F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9B4567B105A2451D8B4B6E0 /* Product.swift */,
+				A14A840FC74854D2F981126F /* Review.swift */,
+				A58E6AB458FB74532A610D1C /* CartStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F383CD6D2EDE4349B556818C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A25091B26F8E34237BDAE60A /* RootTabView.swift */,
+				F26399C9D9BD4CE2AA0CA5B9 /* Home */,
+				618719B067D04BA296489C22 /* Checkout */,
+				69B55819A0144B9E915C15B5 /* Reviews */,
+				7BBB398C56B4407D8C05EE3A /* Contact */,
+				1CD790ED044241B6BE7A897F /* About */,
+				9D31248DE0234F319F62E07A /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F26399C9D9BD4CE2AA0CA5B9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A864BEF15E9214A6BA97F7C7 /* ProductHomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		618719B067D04BA296489C22 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				A0E8D6F298D684EC6A7CC5CE /* CheckoutView.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		69B55819A0144B9E915C15B5 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				A8E108E9B80244039B6782AA /* ReviewsView.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		7BBB398C56B4407D8C05EE3A /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				A885938B12327418BBF1DB7C /* ContactView.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		1CD790ED044241B6BE7A897F /* About */ = {
+			isa = PBXGroup;
+			children = (
+				A694EFB44EFF14E64A0BFFF7 /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		9D31248DE0234F319F62E07A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AF00BBC4D97AF4B7CB2C564D /* ProductPhotoPlaceholder.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A6D3DAA61332437590C092EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A18BC818FB2AF4BA08E51CB5 /* ShippoService.swift */,
+				A03C3A4EEF4B14D148703B86 /* StripeService.swift */,
+				ABEC768083D8F41388E53D4C /* OrderService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AE067B355AF74AC7BE78D1BB /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A22E02F7111D743208A03FBC /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA305901F07D4F598C626926 /* LadyCrisp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D228BC1276C4EC98C498CD7 /* Build configuration list for PBXNativeTarget "LadyCrisp" */;
+			buildPhases = (
+				8BEEF8A4A0964A8CA8EB0C91 /* Sources */,
+				EA5780D11A30431C8DACC9EF /* Frameworks */,
+				5DCC14E20CDD4B0692EC984B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LadyCrisp;
+			productName = LadyCrisp;
+			productReference = 52FDADE7877A4C5798C1272A /* LadyCrisp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31EB063DF00446C6A377A17C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DA305901F07D4F598C626926 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B4D228BC1276C4EC98C498CD /* Build configuration list for PBXProject "LadyCrisp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E87249BD0174FD5A988EFE6;
+			productRefGroup = 378DF137873242CD9B0B9FB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA305901F07D4F598C626926 /* LadyCrisp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DCC14E20CDD4B0692EC984B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789D94A16AB94B0A938117AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BEEF8A4A0964A8CA8EB0C91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329A75723CB24865B167A503 /* LadyCrispApp.swift in Sources */,
+				22E02F7111D743208A03FBCF /* Theme.swift in Sources */,
+				9B4567B105A2451D8B4B6E09 /* Product.swift in Sources */,
+				14A840FC74854D2F981126F6 /* Review.swift in Sources */,
+				58E6AB458FB74532A610D1CB /* CartStore.swift in Sources */,
+				18BC818FB2AF4BA08E51CB5B /* ShippoService.swift in Sources */,
+				03C3A4EEF4B14D148703B86E /* StripeService.swift in Sources */,
+				BEC768083D8F41388E53D4C5 /* OrderService.swift in Sources */,
+				25091B26F8E34237BDAE60A /* RootTabView.swift in Sources */,
+				F00BBC4D97AF4B7CB2C564D9 /* ProductPhotoPlaceholder.swift in Sources */,
+				864BEF15E9214A6BA97F7C78 /* ProductHomeView.swift in Sources */,
+				0E8D6F298D684EC6A7CC5CE2 /* CheckoutView.swift in Sources */,
+				8E108E9B80244039B6782AA3 /* ReviewsView.swift in Sources */,
+				885938B12327418BBF1DB7CF /* ContactView.swift in Sources */,
+				694EFB44EFF14E64A0BFFF7A /* AboutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2A1764550FB94DB4A1F3BCAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF5A9D7508F3479AA1AB18BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16EB8A14E5B048AA93E5A05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LadyCrisp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladycrisp.miami;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8638AAD954894ADEBBD07F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LadyCrisp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladycrisp.miami;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4D228BC1276C4EC98C498CD /* Build configuration list for PBXProject "LadyCrisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1764550FB94DB4A1F3BCAE /* Debug */,
+				FF5A9D7508F3479AA1AB18BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D228BC1276C4EC98C498CD7 /* Build configuration list for PBXNativeTarget "LadyCrisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16EB8A14E5B048AA93E5A05F /* Debug */,
+				8638AAD954894ADEBBD07F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31EB063DF00446C6A377A17C /* Project object */;
+}
