@@ -172,9 +172,6 @@ function renderDrawer() {
       <div class="bi-price">${money(it.priceCents * it.quantity)}</div>
     </div>`).join("");
 
-  const rateBlock = ratesHTML();
-  const shipCents = shippingCents();
-
   body.innerHTML = `
     <div class="co-section"><h3>Your bag</h3>${bag}</div>
 
@@ -193,24 +190,24 @@ function renderDrawer() {
 
     <div class="co-section">
       <h3>Shipping (Shippo)</h3>
-      ${rateBlock}
+      <div id="shipSection">${ratesHTML()}</div>
     </div>
 
     <div class="co-section">
       <div class="totals">
-        <div class="trow"><span>Subtotal</span><span>${money(subtotalCents())}</span></div>
-        <div class="trow"><span>Shipping</span><span>${selectedRate() ? (shipCents === 0 ? "Free" : money(shipCents)) : "—"}</span></div>
-        <div class="trow total"><span>Total</span><span>${money(subtotalCents() + shipCents)}</span></div>
+        <div class="trow"><span>Subtotal</span><span id="tSubtotal">—</span></div>
+        <div class="trow"><span>Shipping</span><span id="tShipping">—</span></div>
+        <div class="trow total"><span>Total</span><span id="tTotal">—</span></div>
         <p class="secure">🔒 Secure checkout powered by Stripe</p>
       </div>
     </div>
 
-    <button class="btn btn-primary full" id="payBtn" ${addressValid() && selectedRate() && !processing ? "" : "disabled"}>
-      ${processing ? "Processing…" : "Pay with Stripe"}
-    </button>
+    <button class="btn btn-primary full" id="payBtn">${processing ? "Processing…" : "Pay with Stripe"}</button>
     <p class="err" id="payErr" hidden></p>`;
 
   wireDrawer();
+  updateTotalsUI();
+  refreshPayState();
 }
 
 function ratesHTML() {
@@ -245,9 +242,9 @@ function wireDrawer() {
   bind("aName", "name", refreshPayState);
   bind("aEmail", "email", refreshPayState);
   bind("aLine1", "line1", refreshPayState);
-  bind("aCity", "city", () => { computeRates(); rerenderRatesAndTotals(); });
+  bind("aCity", "city", () => { computeRates(); updateShippingUI(); });
   bind("aState", "state", refreshPayState);
-  bind("aZip", "postalCode", () => { computeRates(); rerenderRatesAndTotals(); });
+  bind("aZip", "postalCode", () => { computeRates(); updateShippingUI(); });
 
   document.querySelectorAll("[data-inc]").forEach((b) => b.addEventListener("click", () => {
     const sku = b.getAttribute("data-inc"); setQuantity(sku, (cart.get(sku) || 0) + 1);
@@ -255,16 +252,38 @@ function wireDrawer() {
   document.querySelectorAll("[data-dec]").forEach((b) => b.addEventListener("click", () => {
     const sku = b.getAttribute("data-dec"); setQuantity(sku, (cart.get(sku) || 0) - 1);
   }));
-  document.querySelectorAll("[data-rate]").forEach((el) => el.addEventListener("click", () => {
-    selectedRateId = el.getAttribute("data-rate"); rerenderRatesAndTotals();
-  }));
+  wireRateClicks();
 
   const payBtn = document.getElementById("payBtn");
   if (payBtn) payBtn.addEventListener("click", pay);
 }
 
-// Re-render only the parts that depend on rates/address without losing input focus mid-typing.
-function rerenderRatesAndTotals() { renderDrawer(); }
+function wireRateClicks() {
+  document.querySelectorAll("[data-rate]").forEach((el) => el.addEventListener("click", () => {
+    selectedRateId = el.getAttribute("data-rate");
+    updateShippingUI();
+  }));
+}
+
+// Update rates list + totals + pay state in place, WITHOUT rebuilding the
+// address inputs (rebuilding them would drop keyboard focus while typing).
+function updateShippingUI() {
+  const ship = document.getElementById("shipSection");
+  if (ship) ship.innerHTML = ratesHTML();
+  wireRateClicks();
+  updateTotalsUI();
+  refreshPayState();
+}
+
+function updateTotalsUI() {
+  const sub = subtotalCents();
+  const shipC = shippingCents();
+  const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  set("tSubtotal", money(sub));
+  set("tShipping", selectedRate() ? (shipC === 0 ? "Free" : money(shipC)) : "—");
+  set("tTotal", money(sub + shipC));
+}
+
 function refreshPayState() {
   const payBtn = document.getElementById("payBtn");
   if (payBtn) payBtn.disabled = !(addressValid() && selectedRate() && !processing);
