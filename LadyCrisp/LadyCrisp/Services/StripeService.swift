@@ -88,7 +88,7 @@ actor StripeService {
             ],
             "line_items": lineItems,
             "metadata": [
-                "brand": "Lady Crisp",
+                "brand": "Freeze Dried Apples",
                 "market": "Miami FL"
             ]
         ]

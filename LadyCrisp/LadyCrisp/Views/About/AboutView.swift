@@ -30,7 +30,7 @@ struct AboutView: View {
                             }
 
                             VStack(alignment: .leading, spacing: 6) {
-                                Text("Lady Crisp")
+                                Text("Freeze Dried Apples")
                                     .font(Theme.brandFont)
                                     .foregroundStyle(.white)
                                 Text("Miami · Florida")
@@ -47,7 +47,7 @@ struct AboutView: View {
                                 .opacity(reveal ? 1 : 0)
                                 .offset(y: reveal ? 0 : 12)
 
-                            Text("We started Lady Crisp in Miami because humidity and fresh fruit don’t always get along — but crunchy apple flavor still belongs in every tote. Our organic Pink Lady apples are freeze-dried to lock in bright taste without syrups or fillers.")
+                            Text("We started Freeze Dried Apples in Miami because humidity and fresh fruit don’t always get along — but crunchy apple flavor still belongs in every tote. Our organic Pink Lady apples are freeze-dried to lock in bright taste without syrups or fillers.")
                                 .font(.body)
                                 .foregroundStyle(Theme.muted)
                                 .opacity(reveal ? 1 : 0)

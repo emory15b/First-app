@@ -33,7 +33,7 @@ struct ProductHomeView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("Lady Crisp")
+                    Text("Freeze Dried Apples")
                         .font(.system(.headline, design: .serif).weight(.bold))
                         .foregroundStyle(Theme.ink)
                 }
@@ -75,7 +75,7 @@ struct ProductHomeView: View {
             ProductPhotoCarousel()
 
             VStack(alignment: .leading, spacing: 10) {
-                Text("Lady Crisp")
+                Text("Freeze Dried Apples")
                     .font(Theme.brandFont)
                     .foregroundStyle(Theme.ink)
                     .padding(.top, 22)

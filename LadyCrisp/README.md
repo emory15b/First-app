@@ -1,4 +1,4 @@
-# Lady Crisp
+# Freeze Dried Apples
 
 SwiftUI iOS shop for **organic freeze-dried Pink Lady apples**, packed in Miami, Florida.
 
@@ -68,4 +68,4 @@ Backend/             Minimal Stripe PaymentIntent server
 
 ## Brand notes
 
-Lady Crisp is a Miami-first snack brand: rose + orchard green palette, serif wordmark, soft coastal mist backgrounds, and placeholder product photography ready to swap for real pouch shots.
+Freeze Dried Apples is a Miami-first snack brand: rose + orchard green palette, serif wordmark, soft coastal mist backgrounds, and placeholder product photography ready to swap for real pouch shots.

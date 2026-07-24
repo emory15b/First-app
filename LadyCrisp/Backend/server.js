@@ -1,5 +1,5 @@
 /**
- * Lady Crisp — Stripe PaymentIntent backend
+ * Freeze Dried Apples — Stripe PaymentIntent backend
  *
  * Usage:
  *   export STRIPE_SECRET_KEY=sk_test_...
@@ -27,7 +27,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/health", (_req, res) => {
-  res.json({ ok: true, brand: "Lady Crisp", market: "Miami FL" });
+  res.json({ ok: true, brand: "Freeze Dried Apples", market: "Miami FL" });
 });
 
 app.post("/create-payment-intent", async (req, res) => {
@@ -80,5 +80,5 @@ app.post("/create-payment-intent", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Lady Crisp Stripe backend listening on http://localhost:${port}`);
+  console.log(`Freeze Dried Apples Stripe backend listening on http://localhost:${port}`);
 });
