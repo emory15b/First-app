@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freeze Dried Apples · Organic freeze-dried Pink Lady apples from Miami</title>
+  <meta name="description" content="Organic freeze-dried Pink Lady apples, packed in Miami, Florida. Light crunch for Florida heat — no fridge, no fuss." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Top navigation -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="wordmark" href="#top">Freeze&nbsp;Dried&nbsp;Apples</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#shop">Shop</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" aria-label="Open checkout">
+        <span class="bag">🛍️</span>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Product -->
+    <section class="hero" id="shop">
+      <div class="hero-grid">
+        <div class="product-photo" aria-hidden="true">
+          <div class="photo-apple"></div>
+          <span class="photo-tag">Miami · Florida</span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Organic · Freeze-dried · Small batch</p>
+          <h1 class="brand-title">Freeze Dried Apples</h1>
+          <p class="lede">Organic freeze-dried Pink Lady apples, packed in Miami.</p>
+          <p class="muted">Light crunch for Florida heat — no fridge, no fuss.</p>
+
+          <div class="chooser" role="radiogroup" aria-label="Choose your pack">
+            <label class="pack selected" data-sku="individual">
+              <input type="radio" name="pack" value="individual" checked />
+              <span class="pack-main">
+                <span class="pack-name">Single Pack</span>
+                <span class="pack-price">$1.99</span>
+              </span>
+              <span class="pack-sub">One pouch of organic freeze-dried Pink Lady apples</span>
+              <span class="pack-ship paid">Paid shipping via Shippo</span>
+            </label>
+            <label class="pack" data-sku="bundle10">
+              <input type="radio" name="pack" value="bundle10" />
+              <span class="pack-main">
+                <span class="pack-name">10-Pack Bundle</span>
+                <span class="pack-price">$20.00</span>
+              </span>
+              <span class="pack-sub">Ten pouches — best value for Miami snacking</span>
+              <span class="pack-ship free">Free shipping</span>
+            </label>
+          </div>
+
+          <div class="cta-row">
+            <button class="btn btn-primary" id="addCheckoutBtn">Add &amp; checkout</button>
+            <button class="btn btn-ghost" id="addBtn" aria-label="Add to bag">+ Add to bag</button>
+          </div>
+
+          <div class="inside">
+            <h2 class="section-sub">What&rsquo;s inside</h2>
+            <ul class="ticks">
+              <li>100% organic Pink Lady apples, freeze-dried</li>
+              <li>No added sugar, nothing artificial</li>
+              <li>Shelf-stable for lunchboxes, desks, and beach bags</li>
+              <li>Ships from Miami across Florida and the U.S.</li>
+            </ul>
+          </div>
+
+          <div class="miami-note">
+            <span class="pin">📍</span>
+            <div>
+              <strong>Miami-made for local snacking</strong>
+              <span class="muted">Brickell fulfillment · Florida-first delivery windows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+      <div class="wrap">
+        <p class="eyebrow">From Miami &amp; beyond</p>
+        <h2 class="section-title">Neighbors who keep Freeze Dried Apples in the tote.</h2>
+        <p class="stars-line"><span class="stars">★★★★★</span> 4.8 average · local favorites</p>
+        <div class="review-grid" id="reviewGrid"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-banner">
+          <h2 class="brand-title on-dark">Freeze Dried Apples</h2>
+          <p class="on-dark-sub">Miami · Florida</p>
+        </div>
+        <div class="about-copy">
+          <h3 class="section-title">Small-batch freeze-dried Pink Lady apples for Florida living.</h3>
+          <p>We started Freeze Dried Apples in Miami because humidity and fresh fruit don&rsquo;t always get along — but crunchy apple flavor still belongs in every tote. Our organic Pink Lady apples are freeze-dried to lock in bright taste without syrups or fillers.</p>
+          <div class="about-rows">
+            <div class="about-row"><span class="ar-ico">🍃</span><div><strong>Organic fruit only</strong><span class="muted">Pink Lady apples, nothing else in the pouch.</span></div></div>
+            <div class="about-row"><span class="ar-ico">❄️</span><div><strong>Freeze-dried freshness</strong><span class="muted">Airy crunch that stays stable in Florida heat.</span></div></div>
+            <div class="about-row"><span class="ar-ico">📦</span><div><strong>Shippo from Brickell</strong><span class="muted">Paid rates on singles; free shipping on the 10-pack.</span></div></div>
+            <div class="about-row"><span class="ar-ico">💳</span><div><strong>Stripe checkout</strong><span class="muted">Simple, secure payment when you&rsquo;re ready to order.</span></div></div>
+          </div>
+          <p class="muted">Built for neighbors from Coconut Grove to Coral Gables — and anyone who wants a clean apple snack that travels well.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-intro">
+          <p class="eyebrow">Say hello</p>
+          <h2 class="section-title">Questions about orders, wholesale, or Miami pickup? We&rsquo;re here.</h2>
+          <ul class="contact-info">
+            <li>✉️ hello@freezedriedapples.com</li>
+            <li>📍 Miami, Florida</li>
+            <li>🕘 Mon–Fri · 9am–5pm ET</li>
+          </ul>
+        </div>
+        <form class="contact-form panel" id="contactForm" novalidate>
+          <h3 class="section-sub">Contact form</h3>
+          <div id="contactSuccess" class="notice success" hidden></div>
+          <label class="fld"><span>Name</span><input type="text" id="cName" required /></label>
+          <label class="fld"><span>Email</span><input type="email" id="cEmail" required /></label>
+          <div class="fld">
+            <span>Topic</span>
+            <div class="segmented" id="topicSeg" role="tablist">
+              <button type="button" class="seg active" data-topic="order">Order</button>
+              <button type="button" class="seg" data-topic="product">Product</button>
+              <button type="button" class="seg" data-topic="wholesale">Wholesale</button>
+              <button type="button" class="seg" data-topic="other">Other</button>
+            </div>
+          </div>
+          <label class="fld"><span>Message</span><textarea id="cMessage" rows="5" placeholder="How can we help?" required></textarea></label>
+          <p class="err" id="contactErr" hidden>Please add your name, a valid email, and a message of at least 10 characters.</p>
+          <button type="submit" class="btn btn-primary full">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span class="wordmark small">Freeze Dried Apples</span>
+      <p class="muted">Miami-first snack brand · Organic freeze-dried Pink Lady apples · Powered by Stripe &amp; Shippo</p>
+    </div>
+  </footer>
+
+  <!-- Checkout drawer -->
+  <div class="drawer-overlay" id="drawerOverlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Checkout">
+    <div class="drawer-head">
+      <h2>Checkout</h2>
+      <button class="icon-btn" id="closeDrawer" aria-label="Close checkout">✕</button>
+    </div>
+    <div class="drawer-body" id="drawerBody"><!-- rendered by app.js --></div>
+  </aside>
+
+  <script src="./app.js"></script>
+</body>
+</html>
